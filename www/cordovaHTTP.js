@@ -137,6 +137,9 @@ if (typeof angular !== "undefined") {
         };
         return cordovaHTTP;
     });
-} else {
-    window.cordovaHTTP = http;
 }
+
+window.cordovaHTTP = http;
+window.cordova.plugins.http = http;
+
+
